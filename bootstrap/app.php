@@ -25,7 +25,7 @@ $app = new Laravel\Lumen\Application(
 
  $app->withFacades();
 
-// $app->withEloquent();
+ $app->withEloquent();
 
 /*
 |--------------------------------------------------------------------------
@@ -102,5 +102,6 @@ $app->router->group([
 
 //加入自定义的配置文件
 $app->configure('custom');
+$app->configure('api');
 
 return $app;

@@ -11,6 +11,7 @@ namespace App\Events;
 
 class IptEvent extends Event
 {
+    //请求参数
     public $input =[];
 
     public function __construct($input)

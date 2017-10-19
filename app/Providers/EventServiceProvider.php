@@ -14,7 +14,12 @@ class EventServiceProvider extends ServiceProvider
     protected $listen = [
         'App\Events\SomeEvent' => [
             'App\Listeners\EventListener',
+        ],
+        'App\Events\IptEvent' => [
             'App\Listeners\IptEventListener',
+        ],
+        'App\Events\ResponseEvent' => [
+            'App\Listeners\ResponseEventListener',
         ],
     ];
 }

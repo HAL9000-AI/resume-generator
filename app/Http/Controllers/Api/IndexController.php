@@ -11,7 +11,9 @@ use Illuminate\Http\Request;
 use App\Events\IptEvent;
 class IndexController extends Controller{
 
-    public function index(){
+    public function index(Request $request){
 
+        $data = $request->secure();
+        dd($request);
     }
 }
